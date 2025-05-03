@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>영화 검색 사이트</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header-container">
+          <a class="Header">Sehan</a>
+          <form id="search">
+            <input class="search-input" type="search" placeholder="검색하기">
+            <button class="search-btn" type="submit">검색</button>
+          </form>
+        </div>
+    </nav>
+    <div id="card-container">
+    </div>
+
+    <div id="movieModal" class="custom-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close-btn">&times;</span>    
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+      
+  
+    <script src="./key.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
