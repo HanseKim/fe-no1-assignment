@@ -103,27 +103,34 @@ cardContainer.addEventListener('click', function (e) {
 });
 
 function showMovieModal(movie) {
-    const modal = document.getElementById('movieModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalBody = document.getElementById('modalBody');
+    const modal = document.getElementById('movie-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
   
     modalTitle.textContent = movie.title;
   
     const imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
   
     modalBody.innerHTML = `
-      <img src="${imgUrl}" style="max-width: 100%; margin-bottom: 10px;" />
-      <p><strong>개봉일:</strong> ${movie.release_date}</p>
-      <p><strong>평점:</strong> ${movie.vote_average}</p>
-      <p><strong>줄거리:</strong> ${movie.overview || '줄거리 정보 없음'}</p>
+    <div class="modal-body">
+        <div class="modal-img">
+            <img src="${imgUrl}" style="max-width: 100%; margin-bottom: 10px;" />
+        </div>
+        <div class="modal-detail">
+            <p><strong>개봉일:</strong> ${movie.release_date}</p>
+            <p><strong>평점:</strong> ${movie.vote_average}</p>
+            <p><strong>줄거리:</strong> ${movie.overview || '줄거리 정보 없음'}</p>
+        </div>
+    </div>
     `;
+  
   
     modal.classList.remove('hidden');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-btn');
-    const modal = document.getElementById('movieModal');
+    const modal = document.getElementById('movie-modal');
 
     closeBtn.addEventListener('click', () => {
         modal.classList.add('hidden');
