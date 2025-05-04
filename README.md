@@ -39,3 +39,8 @@ TMDB(The Movie Database) API를 활용한 영화 검색 및 정보 조회 웹 �
 │ ├── api.js # TMDB API 호출 함수 정의
 │ ├── render.js # 카드 및 모달 렌더링 함수
 │ └── events.js # 이벤트 리스너 정의
+
+<img width="1061" alt="스크린샷 2025-05-05 오전 12 45 06" src="https://github.com/user-attachments/assets/ba23acc6-331b-4857-8dbc-719cd736c436" />
+<img width="1061" alt="스크린샷 2025-05-05 오전 12 45 17" src="https://github.com/user-attachments/assets/779b3192-3460-4d27-825f-9799e841b000" />
+
+
